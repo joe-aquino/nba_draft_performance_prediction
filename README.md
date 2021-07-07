@@ -1,1 +1,7 @@
-# nba_draft_performance_prediction
+## Predicting the Success of NBA Draftees Based on College Performance
+
+I want to build a model to predict the 5-year peak performance of NCAA basketball players drafted by the NBA, measured by their maximum single-season Win Shares (an advanced statistic that assigns credit for team success to individuals on the team). The majority of an NBA player's development takes place during this 5-year time frame. Statistics from a player's final NCAA season along with biographical information will be used as input for the model. Accurate performance prediction of NBA prospects is highly valued by the ownership and management of NBA teams. It helps them effectively determine which players to acquire and significantly impacts team success, which often relates directly to the organization's financial success. 
+
+The necessary dataset will be created by gathering NCAA and NBA player statistics from www.sports-reference.com with the use of sportsreference, a third-party open-source API, and BeautifulSoup. Only players drafted by the NBA from 2011-2015 will be included in the dataset, since several NCAA advanced statistics (i.e. Box Plus Minus) are unavailable for prior seasons. I will use repeated stratified nested cross-validation for model assessment, due to the limited size of the dataset. Several different statistical and supervised machine learning techniques will be used, coupled with Pearson's rank based variable selection, to model the data. As an evaluation metric, I have chosen to use mean squared error.
+
+View my completed project here: [NBA_Draft_Performance_Model.ipynb](https://github.com/joe-aquino/nba_performance_prediction/blob/master/NBA_Draft_Performance_Model.ipynb)
